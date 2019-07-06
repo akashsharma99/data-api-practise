@@ -4,9 +4,51 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js" integrity="sha256-WVsM3xrcqyuFNF3W1qtIKbHFsD0977nDQA8DCMp1zCw=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js" integrity="sha256-2/3R3NV5zryj0fDjD3cDh+SNiWQ/TJiMVZzAo5FrhiU=" crossorigin="anonymous"></script>
         <title>Document</title>
+        <link rel="stylesheet" href="materialize.css" type="text/css">
+        <style>
+        .cord{
+                color:blue;
+                font-size: 20px;
+        }
+        p{
+                font-size:20px;
+        }
+        </style>
 </head>
-<body>
-        <h1>asfafa</h1>
+<body class="container">
+
+<h1 class="center-align">Data Selfie App</h1>
+<div class="row">
+        <div class="col s12">
+                <ul class="tabs">
+                        <li class="tab col s6"><a href="#entryTab">Enter Data</a></li>
+                        <li class="tab col s6 litab"><a href="#listTab">List Data</a></li>
+                </ul>
+        </div>
+        <div id="entryTab" class="col s12">
+                <p id="locationDetails"></p>
+                <form class='input-data'>
+                        <div class="input-field">
+                                <input type="text" id='mood' class='validate'>
+                                <label for="mood">Enter your mood</label>
+                        </div>
+                        <button class='btn location-button purple lighten-2' type="submit">SUBMIT</button>
+                </form>
+                
+        </div>
+        <div id="listTab" class="col s12">
+
+        </div>
+</div>
+
+
+        
+
+        
+        <script src="materialize.js"></script>
+        <script src="script.js"></script>
 </body>
 </html>
